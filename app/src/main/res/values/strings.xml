@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Titulo App -->
+    <string name="app_name">Centinela</string>
+
+    <!-- cadenas pantalla signup -->
+    <string name="texto_signup_titulo">Centinela</string>
+    <string name="texto_signup_cuerpo"></string>
+    <string name="txt_about_app">Desarrollado por:</string>
+    <string name="txt_about_direccion">Unicreto J-32 Nuevo Chimbote-Perú</string>
+
+    <!-- cadenas pantallas intro screens -->
+    <string name="texto_titulo3">VERIFICACION INMEDIATA</string>
+    <string name="text_slider3"></string>
+    <string name="texto_titulo2">DATOS EN TIEMPO REAL</string>
+    <string name="text_slider2"></string>
+    <string name="texto_titulo1">REGISTRA A TUS VISITANTES</string>
+    <string name="text_slider1">.</string>
+
+    <!-- cadenas de pantallas acceso/registro/reestablecer -->
+    <string name="boton_login">LOGIN</string>
+    <string name="boton_empezar">EMPEZAR</string>
+    <string name="texto_no_eres_miembro">No eres miembro?</string>
+    <string name="texto_registro_ahora">REGISTRATE AHORA</string>
+    <string name="texto_inscribirse_ahora">INSCRIBETE AHORA</string>
+    <string name="txt_nuevo">Nuevo en CheckInApp?</string>
+    <string name="txt_ya_tiene_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="txt_olvido_clave">¿Olvidaste tu contraseña?</string>
+    <string name="txt_iniciar_sesion">INICIAR SESION</string>
+    <string name="txt_registrar_cuenta">REGISTRAR CUENTA</string>
+    <string name="txt_nueva_cuenta">CREAR UNA NUEVA CUENTA</string>
+    <string name="txt_usuario">Correo</string>
+    <string name="txt_clave">Clave</string>
+    <string name="txt_renovarclave">REESTABLECER CLAVE CON CORREO</string>
+
+    <!-- cadenas de items drawer genericos -->
+    <string name="txt_drawer_home">Inicio</string>
+    <string name="txt_drawer_config">Configuracion</string>
+    <string name="txt_drawer_ayuda">Ayuda</string>
+    <string name="txt_drawer_perfil_config">Editar Perfil</string>
+    <string name="txt_drawer_perfil_cerrar_sesion">Cerrar Sesion</string>
+
+    <!-- cadenas drawer-->
+    <string name="txt_drawer_registrar">Registrar</string>
+    <string name="txt_drawer_consultar">Consultar</string>
+    <string name="txt_drawer_programar">Programación</string>
+    <string name="txt_drawer_listanegra">Lista Negra</string>
+
+    <!-- cadenas drawer registro_verificacion -->
+    <string name="txt_drawer_reg_dni">DNI</string>
+    <string name="btn_regPer">Registrar Persona</string>
+    <string name="btn_siguiente">Siguiente</string>
+
+    <!-- cadena drawer registro_visitante -->
+    <string name="txt_Vdni">DNI</string>
+    <string name="txt_Vnombres">Nombres</string>
+    <string name="txt_Vapellido_pat">Apellido Paterno</string>
+    <string name="txt_Vapellido_mat">Apellido Materno</string>
+    <string name="txt_Vsexo">Sexo</string>
+    <string name="txt_Vsexo_M">Hombre</string>
+    <string name="txt_Vsexo_F">Mujer</string>
+
+    <!-- cadena drawer registro final -->
+    <string name="txt_Vasunto">Asunto</string>
+    <string name="txt_Varea">Área</string>
+    <string name="txt_Vgrabarvisita">Registrar Visitante</string>
+    <string name="txt_Vdatos">Datos Personales</string>
+    <string name="txt_Vfecha">Fecha y Hora</string>
+    <string name="txt_Vautorizado">Autorizado Por</string>
+    <string name="txt_Vswitch">Sexo</string>
+    <string name="txt_VswitchS">Tipo</string>
+
+    <string name="txt_RegistrarPersona">Registrar Persona</string>
+
+    <!--Lista negra-->
+    <string name="txt_Vgrabarlistanegra">Agregar a la Lista Negra</string>
+    <string name="txt_registrar_listanegra">BUSCAR PERSONA</string>
+    <string name="txt_Vtelefono">Telefono</string>
+
+    <string name="txt_apellidos">Apellidos</string>
+    <string name="txt_nombres">Nombres</string>
+    <string name="txt_nombres_apellidos">Nombres y apellidos</string>
+    <string name="txt_nombre_usuario">Usuario</string>
+    <string name="txt_correo">Email</string>
+    <string name="txt_telefono">Telefono</string>
+    <string name="txt_sexo">Sexo</string>
+    <string name="txt_masculino">Masculino</string>
+    <string name="txt_femenino">Femenino</string>
+    <string name="txt_fecha_nac">Fecha nac.</string>
+    <string name="txt_codigo_telefeno">Codigo</string>
+    <string name="txt_num_telefono">Telefono</string>
+
+    <!-- textos de iconos de toolbar -->
+    <string name="txt_menu_guardar">Guardar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_drawer_vehiculos">Lista de Vehículos</string>
+    <string name="txt_drawer_vehiculosListaNegra">Lista Negra Vehículos</string>
+    <string name="txt_drawer_reg_placa">Código de Placa</string>
+    <string name="txt_registrar_vehiculoListanegra">Buscar Vehículo</string>
+    <string name="txt_placa">Placa</string>
+    <string name="txt_color">Color</string>
+    <string name="txt_numdoc">DNI</string>
+    <string name="txt_fecha">Fecha</string>
+    <string name="txt_conductor">Conductor</string>
+    <string name="txt_tipo">Tipo vehículo</string>
+    <string name="btn_regVeh">Agregar Vehículo a la Lista negra</string>
+    <string name="txt_ruc">Ruc</string>
+    <string name="txt_RegistrarVehiculo">Registrar Vehículo</string>
+    <string name="btnregVeh">Registrar Vehículo</string>
+    <string name="txt_drawer_registroVehiculos">Registrar visita vehículo</string>
+    <string name="txt_tipoingreso">Ingreso</string>
+    <string name="txt_VgrabarvisitaVehiculo">Registrar Visita Vehículo</string>
+
+
+</resources>

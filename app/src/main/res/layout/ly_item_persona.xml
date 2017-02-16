@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor_padre"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/man" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedor_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:text="Ricardo Bueno Balbis"
+            android:textColor="@color/primary_dark"
+            android:textSize="16sp"
+            tools:text="Ricardo bueno balbis" />
+
+        <TextView
+            android:id="@+id/numdocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nombre"
+            android:layout_below="@+id/nombre"
+            android:text="72661345" />
+
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/nombre"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="999886070" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

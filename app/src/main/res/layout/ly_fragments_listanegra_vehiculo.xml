@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_listanegra_vehiculos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCCCCC">
+
+        <ProgressBar
+            android:id="@+id/ultimate_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:visibility="visible" />
+
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/ultimate_recycler_view_listanegra_vehiculos"
+            app:recyclerviewClipToPadding="true"
+            app:recyclerviewScrollbars="vertical"
+            app:recyclerviewEmptyView="@layout/vista_vacia"
+            app:recyclerviewDefaultSwipeColor="@array/google_colors"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_content_add"
+        android:layout_marginBottom="@dimen/codelab_fab_margin_bottom"
+        android:layout_marginRight="@dimen/codelab_fab_margin_right"
+        app:fabSize="normal" />
+
+</FrameLayout>

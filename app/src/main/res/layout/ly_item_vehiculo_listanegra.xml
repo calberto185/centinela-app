@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor_padre"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_carro"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/car" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedor_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:text="ABC-123"
+            android:textColor="@color/primary_dark"
+            android:textSize="16sp"
+            tools:text="ABC-123" />
+
+        <TextView
+            android:id="@+id/conductor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_below="@+id/placa"
+            android:text="Ricardo bueno balbis"
+            android:maxLines="1"
+             />
+
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/placa"
+            android:layout_marginRight="15dp"
+            android:text="23/08/2016" />
+
+        <!--<TextView
+            android:id="@+id/tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/fecha"
+            android:layout_below="@+id/fecha"
+            android:text="Carro" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

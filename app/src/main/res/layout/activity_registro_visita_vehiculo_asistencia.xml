@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+            android:id="@+id/scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <!-- El en relativeLayout no es recomendable ponerle los margenes(margin) en global es preferible
+             en cada etiqueta-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="outsideOverlay">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxt_dw_placa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/txtplaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="@string/txt_placa" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxt_dw_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxt_dw_placa"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtcolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_color" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxt_dw_color"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_tipo"
+                    android:textColor="@color/color_secondary_text"
+                    android:textSize="18dp"
+                    android:thumb="@drawable/switch_compat_custom"
+                    app:track="@drawable/switch_compat_custom_track" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxt_dw_dni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tipo"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtdni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_numdoc" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxt_dw_conductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxt_dw_dni"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtconductor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_conductor" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxt_dw_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxt_dw_conductor"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtfecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_fecha" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/tipoingreso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxt_dw_fecha"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_tipoingreso"
+                    android:textColor="@color/color_secondary_text"
+                    android:textSize="18dp"
+                    android:thumb="@drawable/switch_compat_custom"
+                    app:track="@drawable/switch_compat_custom_track" />
+
+
+                <Button
+                    android:id="@+id/btn_regVehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tipoingreso"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/btnregVeh"
+                    android:theme="@style/AppTheme.ButtonPrimary" />
+
+            </RelativeLayout>
+        </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "643893784414",
+    "firebase_url": "https://centinela-9d622.firebaseio.com",
+    "project_id": "centinela-9d622",
+    "storage_bucket": "centinela-9d622.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643893784414:android:2e9e1287ccabfa8d",
+        "android_client_info": {
+          "package_name": "com.jassgroup.centinela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643893784414-vfhpnks2l5mb0f5i9ch1hvf4cdifu5f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKdKOR7ls3HIv01j3hfOKUwWVkGE0_wPo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
